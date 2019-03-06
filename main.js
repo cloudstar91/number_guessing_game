@@ -22,9 +22,11 @@ function color(myColor) {
 
     let a = document.getElementById("comment");
 
-
+    console.log(a)
     a.className = (myColor);
 
+    console.log('After adding');
+    console.log(a);
 }
 
 function checkGuess() {
@@ -65,8 +67,8 @@ function checkGuess() {
         comment.innerHTML = result;
         turnRemainSpan.innerHTML = "Remaining attemp: " + turnCount;
     }
-
     console.log(turnCount);
+
 }
 
 // function Reset() {
