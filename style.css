@@ -1,0 +1,11 @@
+.alertMessHigh {
+    background-color: rgb(248, 153, 153);
+}
+
+.alertMessLow {
+    background-color: rgb(83, 147, 248);
+}
+
+.alertMessOk {
+    background-color: rgb(141, 255, 112);
+}
