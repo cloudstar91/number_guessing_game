@@ -48,6 +48,7 @@ function checkGuess() {
     } else
     if (userNumber > randomNumber) {
         result = ("Your number is higher");
+
         turnCount--;
         color("alertMessHigh");
 
@@ -59,23 +60,27 @@ function checkGuess() {
 
     }
     if (turnCount === 0) {
-        turnRemainSpan.innerHTML = "Over. Please click New Game!";
+        turnRemainSpan.innerHTML = "Game Over. Please play again!";
         comment.innerHTML = "";
         color("alertMess");
+        document.getElementById("guessBtn").disabled = true;
         return;
     } else if (turnCount > 0) {
         comment.innerHTML = result;
         turnRemainSpan.innerHTML = "Remaining attemp: " + turnCount;
+
+
     }
+
     console.log(turnCount);
 
 }
-
+guessBtn.addEventListener("click", checkGuess);
 // function Reset() {
 //     document.getElementById("myForm").reset();
 // }
 
-guessBtn.addEventListener("click", checkGuess);
+
 // resetBtn.addEventListener("click", Reset);
 
 // let testButton = document.getElementById("testBtn");
