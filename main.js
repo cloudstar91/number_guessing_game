@@ -76,14 +76,17 @@ function checkGuess() {
 
 }
 guessBtn.addEventListener("click", checkGuess);
-// function Reset() {
-//     document.getElementById("myForm").reset();
-// }
+
+function Reset() {
+
+    location.reload();
+};
 
 
-// resetBtn.addEventListener("click", Reset);
+let testButton = document.getElementById("resetBtn");
 
-// let testButton = document.getElementById("testBtn");
+resetBtn.addEventListener("click", Reset);
+
 
 
 // testButton.addEventListener("click", color);
