@@ -2,4 +2,4 @@
 
 in progress
 
-https://sharp-mcclintock-544bcb.netlify.com/
+https://guess-a-number.netlify.com/
